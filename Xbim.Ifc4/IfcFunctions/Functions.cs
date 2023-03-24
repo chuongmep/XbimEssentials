@@ -620,37 +620,31 @@ namespace Xbim.Ifc4
                         Count = SIZEOF(Objects.Where(temp => !((INTYPEOF(temp, "IFC4.IFCPROCESS")))));
                         return (Count == 0);
                     }
-                    ;
                 case IfcObjectTypeEnum.CONTROL:
                     {
                         Count = SIZEOF(Objects.Where(temp => !((INTYPEOF(temp, "IFC4.IFCCONTROL")))));
                         return (Count == 0);
                     }
-                    ;
                 case IfcObjectTypeEnum.RESOURCE:
                     {
                         Count = SIZEOF(Objects.Where(temp => !((INTYPEOF(temp, "IFC4.IFCRESOURCE")))));
                         return (Count == 0);
                     }
-                    ;
                 case IfcObjectTypeEnum.ACTOR:
                     {
                         Count = SIZEOF(Objects.Where(temp => !((INTYPEOF(temp, "IFC4.IFCACTOR")))));
                         return (Count == 0);
                     }
-                    ;
                 case IfcObjectTypeEnum.GROUP:
                     {
                         Count = SIZEOF(Objects.Where(temp => !((INTYPEOF(temp, "IFC4.IFCGROUP")))));
                         return (Count == 0);
                     }
-                    ;
                 case IfcObjectTypeEnum.PROJECT:
                     {
                         Count = SIZEOF(Objects.Where(temp => !((INTYPEOF(temp, "IFC4.IFCPROJECT")))));
                         return (Count == 0);
                     }
-                    ;
                 default:
                     return null;
             }
